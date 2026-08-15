@@ -1,0 +1,80 @@
+/* ============================================
+   ICON STYLING & ANIMATIONS
+   ============================================ */
+i, .fa, [class^='fa-'], [class*=' fa-'] {
+  transition: all 0.3s ease;
+}
+
+/* Section heading icons */
+h2 i, h3 i {
+  margin-right: 15px;
+  color: var(--primary-gold);
+  font-size: 0.95em;
+}
+
+/* About section list icons */
+.about-section li i {
+  margin-right: 12px;
+  color: var(--primary-gold);
+  font-weight: 700;
+}
+
+.about-section li:hover i {
+  transform: scale(1.2) rotate(5deg);
+}
+
+/* Skills list icons */
+.skills-list i {
+  margin-right: 12px;
+  color: var(--primary-gold);
+  font-size: 0.9em;
+}
+
+.skills-list li:hover i {
+  transform: scale(1.15) rotate(-5deg);
+}
+
+/* Certification button icons */
+.view-cert i {
+  margin-right: 8px;
+  transition: all 0.3s ease;
+}
+
+.view-cert:hover i {
+  transform: scale(1.2);
+}
+
+/* Experience section icons */
+.experience-section h3 i,
+.experience-section .experience-meta i {
+  margin-right: 10px;
+  color: var(--primary-gold);
+}
+
+.experience-section:hover h3 i {
+  transform: scale(1.15) translateX(3px);
+}
+
+/* Education section icons */
+.edu-list i {
+  margin-right: 10px;
+  color: var(--primary-gold);
+}
+
+.edu-list li:hover i {
+  transform: scale(1.15) rotate(10deg);
+}
+
+/* Responsive icon adjustments */
+@media (max-width: 700px) {
+  h2 i, h3 i {
+    margin-right: 10px;
+    font-size: 0.9em;
+  }
+  
+  .skills-list i,
+  .about-section li i,
+  .edu-list i {
+    margin-right: 10px;
+  }
+}

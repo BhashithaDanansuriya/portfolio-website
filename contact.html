@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Bhashitha Danansuriya</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Bhashitha Danansuriya</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="my-work.html">My Work</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="resume.html">Resume</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Get In Touch</h1>
+    <p class="contact-intro">I'd love to hear from you! Reach out through any of the channels below.</p>
+    
+    <div class="contact-grid">
+      <!-- Email Card -->
+      <div class="contact-card">
+        <div class="contact-icon email-icon">
+          <i class="fas fa-envelope"></i>
+        </div>
+        <h3>Email</h3>
+        <p class="contact-method">bhashitha.danansuriya@gmail.com</p>
+        <div class="contact-actions">
+          <a href="mailto:bhashitha.danansuriya@gmail.com" class="contact-btn primary-btn">
+            <i class="fas fa-paper-plane"></i> Send Email
+          </a>
+          <button class="contact-btn copy-btn" onclick="copyToClipboard('bhashitha.danansuriya@gmail.com', event)">
+            <i class="fas fa-copy"></i> Copy
+          </button>
+        </div>
+      </div>
+
+      <!-- WhatsApp Card -->
+      <div class="contact-card">
+        <div class="contact-icon whatsapp-icon">
+          <i class="fab fa-whatsapp"></i>
+        </div>
+        <h3>WhatsApp</h3>
+        <p class="contact-method">+94 743824562</p>
+        <div class="contact-actions">
+          <a href="https://wa.me/94743824562" class="contact-btn primary-btn" target="_blank">
+            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+          </a>
+          <button class="contact-btn copy-btn" onclick="copyToClipboard('+94 743824562', event)">
+            <i class="fas fa-copy"></i> Copy
+          </button>
+        </div>
+      </div>
+
+      <!-- LinkedIn Card -->
+      <div class="contact-card">
+        <div class="contact-icon linkedin-icon">
+          <i class="fab fa-linkedin"></i>
+        </div>
+        <h3>LinkedIn</h3>
+        <p class="contact-method">Connect with me</p>
+        <div class="contact-actions">
+          <a href="https://www.linkedin.com/in/bhashitha-danansuriya-a262723a2?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="contact-btn primary-btn" target="_blank">
+            <i class="fab fa-linkedin"></i> Visit Profile
+          </a>
+          <button class="contact-btn copy-btn" onclick="copyToClipboard('https://www.linkedin.com/in/bhashitha-danansuriya-a262723a2?utm_source=share_via&utm_content=profile&utm_medium=member_android', event)">
+            <i class="fas fa-copy"></i> Copy Link
+          </button>
+        </div>
+      </div>
+
+      <!-- GitHub Card -->
+      <div class="contact-card">
+        <div class="contact-icon github-icon">
+          <i class="fab fa-github"></i>
+        </div>
+        <h3>GitHub</h3>
+        <p class="contact-method">View my projects</p>
+        <div class="contact-actions">
+          <a href="https://github.com/BhashithaDanansuriya" class="contact-btn primary-btn" target="_blank">
+            <i class="fab fa-github"></i> Visit Profile
+          </a>
+          <button class="contact-btn copy-btn" onclick="copyToClipboard('https://github.com/BhashithaDanansuriya', event)">
+            <i class="fas fa-copy"></i> Copy Link
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
