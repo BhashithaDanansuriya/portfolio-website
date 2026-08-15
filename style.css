@@ -8,6 +8,16 @@
 }
 
 /* ============================================
+   RESPONSIVE IMAGES — safety net so no image can ever
+   overflow its container on a narrow screen.
+   (More specific rules below, like .hero-image img, still win.)
+   ============================================ */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ============================================
    COLOR VARIABLES
    ============================================ */
 :root {
@@ -552,6 +562,8 @@ button:active {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;       /* prevents the arrow from getting squeezed off on narrow screens */
+  row-gap: 10px;
   padding: 30px 20px;
   border: 2px solid var(--border-light);
   border-radius: 12px;
@@ -1441,6 +1453,10 @@ button:active {
     padding: 16px 20px;
   }
   
+  nav .logo {
+    font-size: 1.25rem;      /* prevents the full name from crowding a narrow navbar */
+  }
+  
   h1 {
     font-size: 2rem;
     margin-bottom: 25px;
@@ -1454,7 +1470,66 @@ button:active {
   body {
     font-size: 18px;
   }
+
+  /* These sections weren't tightened before — padding was still desktop-sized on tablets/phones */
+  .project-box {
+    padding: 30px 20px;
+  }
+
+  .experience-section {
+    padding: 22px 18px;
+  }
+
+  .detail-section {
+    padding: 22px 18px;
+  }
 }
+
+/* ============================================
+   SMALL PHONES (e.g. iPhone SE, older Android, ~360px and under)
+   One more step down from the 700px breakpoint above
+   ============================================ */
+@media (max-width: 480px) {
+  .container {
+    padding: 25px 14px;
+  }
+
+  nav {
+    padding: 14px 14px;
+  }
+
+  nav .logo {
+    font-size: 1.1rem;
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 220px;
+    height: 260px;
+  }
+
+  .cv-card {
+    padding: 30px 18px;
+    margin: 0 8px;
+  }
+
+  .contact-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 2.6rem;
+  }
+
+  .work-list-item,
+  .project-box,
+  .cert-item,
+  .experience-section,
+  .detail-section,
+  .about-section,
+  .edu-section {
+    padding: 18px 14px;
+  }
+}
+
 /* ============================================
    ICON STYLING & ANIMATIONS
    ============================================ */
