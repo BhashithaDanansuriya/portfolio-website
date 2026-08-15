@@ -1610,3 +1610,11 @@ h2 i, h3 i {
     margin-right: 10px;
   }
 }
+/* ============================================
+   HERO TAGLINE — larger, bold intro line under the name
+   ============================================ */
+.hero-tagline {
+  font-size: 1.9rem;
+  font-weight: 400;
+  color: var(--primary-black);
+}
